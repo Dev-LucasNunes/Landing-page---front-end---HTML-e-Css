@@ -13,16 +13,121 @@ html, body{
 /*divs gerais*/
 .container{
 	width: 100%;
-	max-width: 1280px;
+	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 2%;
 }
 
 .clear{
 	clear: both;
 }
 
+/*Cabeçalho*/
 
 header{
 	background-color: #D6D6D6;
-	padding: 10px 0;
+	padding: 30px 2%;
 }
+
+
+
+.logo1{
+	width: 160px;
+	height: 70px;
+	float: left;
+	background-image: url('../imagens/logo1.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.logo2{
+	width: 160px;
+	height: 70px;
+	float: right;
+	background-image: url(../imagens/logo2.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*responsivo cabeçalho*/
+@media screen and (max-width: 425px){
+	
+	header{
+		text-align: center;
+
+		
+	}
+
+	.logo1,.logo2{
+		float: none;
+		display: inline-block;
+		margin-top: 10px;
+
+	}
+}
+
+/*centro*/
+
+section.main{
+	width: 100%;
+}
+
+.bg{
+	background-image: url('../imagens/bg-form.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+}
+
+.form-container{
+	float: right;
+	width: 400px;
+	height: 110%;
+	background-color: rgba(149,150,153,0.6);
+	position: relative;
+	top: -5%;
+}
+
+.form-container h2{
+	padding: 15px;
+	color: black;
+	font-size: 18px;
+	background-color: rgba(234, 236, 239, 0.8);
+}
+
+form{
+	margin-top: 20px;
+	padding: 30px;
+}
+
+.box{
+	margin-top: 20px;
+}
+form p{
+	text-align: left;
+	font-size: 18px;
+	color: black;
+}
+.box input[type=text]{
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 50px;
+	font-size: 15px;
+	border-radius: 10px;
+}
+
+.box1 input[type=submit]{
+	background-color: #033C50;
+	text-transform: uppercase;
+	font-size: 25px;
+	margin-top: 25px;
+	width: 100%;
+	color: white;
+	height: 50px;
+	border: 0;
+	border-radius: 10px;
+	cursor: pointer;
+}
+

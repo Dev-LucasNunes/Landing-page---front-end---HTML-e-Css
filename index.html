@@ -9,18 +9,43 @@
 	<meta charset="author" content="Lucas Nunes">
 	<title>Landing page 2</title>
 </head>
-<header>
+<body>
+	<header>
 	<div class="container">
-		<div class="logo1">
-			
-		</div><!--logo1-->
-		<div class="logo2">
-			
-		</div><!--logo2-->
+		<!--técnica da div cega pra deixar um logo abaixo do outro, mesmo inline-block-->
+		<div><div class="logo1"></div><!--logo1--></div>
+		<div><div class="logo2"></div><!--logo2--></div>
 		<div class="clear"></div>
 	</div><!--container-->
 </header>
-<body>
+<section class="main">
+	<div class="container bg">
+		<div class="form-container">
+			<h2>PODE ACREDITAR, POR DENTRO É AINDA MAIS BONITO.</h2>	
+			<form>
+				<div class="box">
+					<p>* Nome completo:</p>
+					<input type="text" name="Nome" required placeholder="Nome">
+				</div>
+				<div class="box">
+					<p>* Email:</p>
+					<input type="text" name="E-mail" required placeholder="E-mail">
+				</div>
+				<div class="box">
+					<p>Telefone:</p>
+					<input type="text" name="Telefone" required placeholder="Telefone">
+				</div>
+				<div class="box1">
+					<input type="submit" name="acao" value="enviar">
+				</div>
+				<div class="box">
+					<p>* Campos Obrigatórios</p>
+				</div>
+				
+			</form>
+		</div><!--form-->
+	</div><!--container bg-->
+</section><!--main-->
 
 </body>
 </html>
