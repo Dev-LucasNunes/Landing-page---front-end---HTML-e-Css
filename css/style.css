@@ -3,6 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Merriweather', serif;
 }
 
 html, body{
@@ -26,7 +27,7 @@ html, body{
 
 header{
 	background-color: #D6D6D6;
-	padding: 30px 2%;
+	padding: 20px 2%;
 }
 
 
@@ -79,51 +80,70 @@ section.main{
 	background-position: center;
 	background-size: cover;
 	height: 500px;
+	perspective: 1000px;
 }
 
 .form-container{
 	float: right;
 	width: 400px;
 	height: 110%;
-	background-color: rgba(149,150,153,0.6);
-	position: relative;
+	background: linear-gradient(to right, rgba(255,123,0,0.2), rgba(234,158,94,0.8));
+	position: relative;/*tecnica para deixar o form entre o centro e o header*/
 	top: -5%;
+	border-radius: 10px;
+	-webkit-box-shadow: -19px 11px 18px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -19px 11px 18px 0px rgba(0,0,0,0.75);
+	box-shadow: -19px 11px 18px 0px rgba(0,0,0,0.75);
+	z-index: 2;
 }
 
 .form-container h2{
-	padding: 15px;
+	text-align: center;
+	font-weight: normal;
+	padding: 10px;
+	margin-top: 14px;
 	color: black;
-	font-size: 18px;
-	background-color: rgba(234, 236, 239, 0.8);
+	font-size: 24px;
+	background: linear-gradient(to right, rgba(255,123,0,0.2), rgba(234,158,94,0.8));
+
+
+	
 }
 
 form{
-	margin-top: 20px;
-	padding: 30px;
+	margin-top: 15px;
+	text-align: center;
+	padding: 5px;
 }
 
-.box{
-	margin-top: 20px;
-}
+
+
 form p{
+	margin-left: 20px;
 	text-align: left;
 	font-size: 18px;
 	color: black;
 }
+
 .box input[type=text]{
-	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 90%;
 	border: 1px solid #ccc;
 	height: 50px;
+	padding-left: 5px;
 	font-size: 15px;
 	border-radius: 10px;
 }
 
+
 .box1 input[type=submit]{
 	background-color: #033C50;
 	text-transform: uppercase;
+	text-align: center;
 	font-size: 25px;
 	margin-top: 25px;
-	width: 100%;
+	width: 90%;
 	color: white;
 	height: 50px;
 	border: 0;
@@ -131,3 +151,29 @@ form p{
 	cursor: pointer;
 }
 
+.box:last-child{
+	margin-top: 25px;
+
+	
+}
+
+.chamada{
+	background-color: rgb(214,214,214);
+	width: 100%;
+	height: 300px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2%;
+	display: flex;
+	z-index: -1;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	top: -50px;
+}
+
+.chamada article h2{
+	font-size: 30px;
+	color: black;
+	max-width: 600px;
+}	
