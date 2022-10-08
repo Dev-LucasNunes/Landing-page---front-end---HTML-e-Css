@@ -16,7 +16,7 @@ html, body{
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 2%;
+	
 }
 
 .clear{
@@ -26,48 +26,33 @@ html, body{
 /*Cabeçalho*/
 
 header{
-	background-color: #D6D6D6;
+	background: linear-gradient(to bottom, rgba(65,92,124,0.1), rgba(65,92,124,0.7), rgba(60,87,120,1));
 	padding: 20px 2%;
+	border-bottom: none;
 }
 
 
 
 .logo1{
-	width: 160px;
-	height: 70px;
+	width: 200px;
+	height: 100px;
 	float: left;
 	background-image: url('../imagens/logo1.png');
-	background-size: 100% auto;
+	background-size: 100% 70%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .logo2{
-	width: 160px;
-	height: 70px;
+	width: 200px;
+	height: 100px;
 	float: right;
 	background-image: url(../imagens/logo2.png);
-	background-size: 100% auto;
+	background-size: 100% 70%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-/*responsivo cabeçalho*/
-@media screen and (max-width: 425px){
-	
-	header{
-		text-align: center;
-
-		
-	}
-
-	.logo1,.logo2{
-		float: none;
-		display: inline-block;
-		margin-top: 10px;
-
-	}
-}
 
 /*centro*/
 
@@ -84,6 +69,7 @@ section.main{
 }
 
 .form-container{
+	margin-right: 2%;
 	float: right;
 	width: 400px;
 	height: 110%;
@@ -94,7 +80,7 @@ section.main{
 	-webkit-box-shadow: -19px 11px 18px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: -19px 11px 18px 0px rgba(0,0,0,0.75);
 	box-shadow: -19px 11px 18px 0px rgba(0,0,0,0.75);
-	z-index: 2;
+	
 }
 
 .form-container h2{
@@ -157,23 +143,169 @@ form p{
 	
 }
 
-.chamada{
-	background-color: rgb(214,214,214);
+/*pós banner*/
+
+section.chamada{
+	background: linear-gradient(to bottom, rgba(65,92,124,1), rgba(65,92,124,0.7), rgba(60,87,120,0.2));
 	width: 100%;
-	height: 300px;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 2%;
-	display: flex;
-	z-index: -1;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	top: -50px;
+	padding: 30px 0;
+	text-align: center;
+	
 }
 
-.chamada article h2{
-	font-size: 30px;
-	color: black;
-	max-width: 600px;
-}	
+section.chamada article{
+	width: 100%;
+	display: inline-block;
+
+}
+
+section.chamada article h2{
+	font-size: 24px;
+	color: white;
+}
+
+section.chamada article p{
+	font-size: 18px;
+	color: white;
+}
+
+svg{
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: 60px;
+}
+
+/*Parte inferior*/
+
+
+.mosaico{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.mosaico-rev{
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;
+}
+
+.item1{
+	background-image: url(../imagens/mosaico1.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 60%;
+	height: 320px;
+
+}
+
+.p1{
+	width: 40%;
+	height: 320px;
+	padding: 150px 40px;
+	font-size: 25px;
+	background: linear-gradient(to bottom, rgba(65,92,124,1), rgba(65,92,124,0.7), rgba(60,87,120,0.2));
+	color: white;
+	text-align: center;
+
+
+}
+
+.item2{
+	background-image: url(../imagens/mosaico2.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 60%;
+	height: 320px;
+
+}
+
+.p2{
+	width: 40%;
+	height: 320px;
+	padding: 150px 40px;
+	font-size: 25px;
+	background: linear-gradient(to bottom, rgba(65,92,124,1), rgba(65,92,124,0.7), rgba(60,87,120,0.2));
+	color: white;
+	text-align: center;
+}
+
+.item3{
+	background-image: url(../imagens/mosaico3.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 60%;
+	height: 320px;
+
+}
+
+.p3{
+	width: 40%;
+	height: 320px;
+	padding: 150px 40px;
+	font-size: 25px;
+	background: linear-gradient(to bottom, rgba(65,92,124,1), rgba(65,92,124,0.7), rgba(60,87,120,0.2));
+	color: white;
+	text-align: center;
+}
+
+.item4{
+	background-image: url(../imagens/mosaico4.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 60%;
+	height: 320px;
+
+
+}
+
+.p4{
+	width: 40%;
+	height: 320px;
+	padding: 150px 40px;
+	font-size: 25px;
+	background: linear-gradient(to bottom, rgba(65,92,124,1), rgba(65,92,124,0.7), rgba(60,87,120,0.2));
+	color: white;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsivo cabeçalho*/
+@media screen and (max-width: 425px){
+	
+	header{
+		text-align: center;
+
+		
+	}
+
+	.logo1,.logo2{
+		float: none;
+		display: inline-block;
+		margin-top: 10px;
+
+	}
+}
